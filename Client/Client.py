@@ -56,15 +56,7 @@ BASE_GAMES_PER_CORE = 32    # Typical games played per-thread
 FLEET_MODE          = False # Exit when there are no workloads
 
 CUSTOM_SETTINGS = {
-    'Ethereal'    : [], 'Laser'     : [],
-    'Weiss'       : [], 'Demolito'  : [],
-    'Rubichess'   : [], 'FabChess'  : [],
-    'Igel'        : [], 'Winter'    : [],
-    'Halogen'     : [], 'Stash'     : [],
-    'Seer'        : [], 'Koivisto'  : [],
-    'Drofa'       : [], 'Bit-Genie' : [],
-    'Berserk'     : [], 'Zahak'     : [],
-    'BlackMarlin' : [],
+    'nameless' : [],
 };
 
 ERRORS = {
@@ -110,7 +102,7 @@ def locate_utility(util, force_exit=True, report_error=True):
 def check_for_utilities():
 
     print('\nScanning For Basic Utilities...')
-    for utility in ['gcc', 'make']:
+    for utility in ['gcc', 'make', 'meson']:
         locate_utility(utility)
 
 
@@ -750,8 +742,8 @@ def build_cutechess_command(arguments, workload, dev_name, base_name, nps):
 
     flags  = '-repeat -recover -resign %s -draw %s '
     flags += '-srand %d -variant %s -concurrency %d -games %d '
-    flags += '-engine dir=Engines/ cmd=./%s proto=uci tc=%s%s name=%s '
-    flags += '-engine dir=Engines/ cmd=./%s proto=uci tc=%s%s name=%s '
+    flags += '-engine dir=Engines/ cmd=./%s proto=xboard tc=%s%s name=%s '
+    flags += '-engine dir=Engines/ cmd=./%s proto=xboard tc=%s%s name=%s '
     flags += '-openings file=Books/%s format=%s order=random plies=16 '
     flags += '-pgnout PGNs/%s_vs_%s '
 
