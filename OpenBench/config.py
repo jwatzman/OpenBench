@@ -27,13 +27,13 @@ OPENBENCH_CONFIG = {
 
     # Generic Error Messages useful to those setting up their own instance
     'error' : {
-        'disabled' : 'Account has not been enabled. Contact andrew@grantnet.us',
+        'disabled' : 'Account has not been enabled.',
         'fakeuser' : 'This is not a real OpenBench User. Create an OpenBench account',
     },
 
     # Link to the repo on the sidebar, as well as the core files
-    'framework' : 'http://github.com/AndyGrant/OpenBench/',
-    'corefiles' : 'https://raw.githubusercontent.com/AndyGrant/OpenBench/master/CoreFiles',
+    'framework' : 'http://github.com/jwatzman/OpenBench/',
+    'corefiles' : 'https://raw.githubusercontent.com/jwatzman/OpenBench/master/CoreFiles',
 
     # Test Configuration. For both SPRT and Fixed Games Tests
 
@@ -52,37 +52,37 @@ OPENBENCH_CONFIG = {
         '2moves_v1.epd' : {
             'name'    : '2moves_v1.epd',
             'sha'     : '7bec98239836f219dc41944a768c0506abed950aaec48da69a0782643e90f237',
-            'source'  : 'https://raw.githubusercontent.com/AndyGrant/OpenBench/master/Books/2moves_v1.epd.zip',
+            'source'  : 'https://raw.githubusercontent.com/jwatzman/OpenBench/master/Books/2moves_v1.epd.zip',
         },
 
         '8moves_v3.epd' : {
             'name'    : '8moves_v3.epd',
             'sha'     : '1f055af431656f09ee6a09d2448e0b876125f78bb7b404fca2031c403a1541e5',
-            'source'  : 'https://raw.githubusercontent.com/AndyGrant/OpenBench/master/Books/8moves_v3.epd.zip',
+            'source'  : 'https://raw.githubusercontent.com/jwatzman/OpenBench/master/Books/8moves_v3.epd.zip',
         },
 
         '3moves_FRC.epd' : {
             'name'    : '3moves_FRC.epd',
             'sha'     : '6bf81e1ada6a3306bbc8356f7bca1e2984a2828d658799992d5443b7179c934d',
-            'source'  : 'https://raw.githubusercontent.com/AndyGrant/OpenBench/master/Books/3moves_FRC.epd.zip',
+            'source'  : 'https://raw.githubusercontent.com/jwatzman/OpenBench/master/Books/3moves_FRC.epd.zip',
         },
 
         '4moves_noob.epd' : {
             'name'    : '4moves_noob.epd',
             'sha'     : '4be746a91e3f8af0c9344b1e72d611e9fcfe486843867a55760970a4896f284d',
-            'source'  : 'https://raw.githubusercontent.com/AndyGrant/OpenBench/master/Books/4moves_noob.epd.zip',
+            'source'  : 'https://raw.githubusercontent.com/jwatzman/OpenBench/master/Books/4moves_noob.epd.zip',
         },
 
         'Pohl.epd' : {
             'name'    : 'Pohl.epd',
             'sha'     : 'b3e64e0dab84cf451a9ac7ef031f5a2bbcf16c7e21be95298fb03cbf021f5466',
-            'source'  : 'https://raw.githubusercontent.com/AndyGrant/OpenBench/master/Books/Pohl.epd.zip',
+            'source'  : 'https://raw.githubusercontent.com/jwatzman/OpenBench/master/Books/Pohl.epd.zip',
         },
 
         'DFRC.epd' : {
             'name'    : 'DFRC.epd',
             'sha'     : '648c447ef40614a44d13b78911e81470d8ddb0d3b2711c1b180e990871f5db4f',
-            'source'  : 'https://raw.githubusercontent.com/AndyGrant/OpenBench/master/Books/DFRC.epd.zip',
+            'source'  : 'https://raw.githubusercontent.com/jwatzman/OpenBench/master/Books/DFRC.epd.zip',
         },
     },
 
