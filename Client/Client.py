@@ -194,9 +194,9 @@ def try_until_success(mesg):
                 try: return funct(*args)
                 except Exception:
                     print('[Error]', mesg);
+                    if DEBUG: traceback.print_exc()
                     if FLEET_MODE: sys.exit()
                     time.sleep(TIMEOUT_ERROR)
-                    if DEBUG: traceback.print_exc()
         return __try_until_success
     return _try_until_success
 
