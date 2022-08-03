@@ -97,7 +97,7 @@ OPENBENCH_CONFIG = {
 
             'nps'    : 3900000,
             'base'   : 'master',
-            'book'   : '2moves_v1.epd.zip',
+            'book'   : 'Pohl.epd',
             'bounds' : '[0.00, 5.00]',
             'source' : 'https://github.com/jwatzman/nameless-chessbot',
 
