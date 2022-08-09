@@ -107,10 +107,9 @@ OPENBENCH_CONFIG = {
             },
 
             'testmodes' : [
-                { 'id' : 'STC',                'th' : 1, 'hash' :  64, 'tc' : '30+1' },
-                { 'id' : 'LTC',                'th' : 1, 'hash' :  64, 'tc' : '10/40+0' },
-                { 'id' : 'SMP STC',            'th' : 8, 'hash' :  64, 'tc' : '30+1' },
-                { 'id' : 'SMP LTC',            'th' : 8, 'hash' :  64, 'tc' : '10/40+0' },
+                { 'id' : 'Short',                'th' : 1, 'hash' :  64, 'tc' : '10+0.1' },
+                { 'id' : 'Long',                 'th' : 1, 'hash' :  64, 'tc' : '30+1' },
+                { 'id' : 'Ultra-long',           'th' : 1, 'hash' :  64, 'tc' : '10/40+0' },
             ],
         }
     },
