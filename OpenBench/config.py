@@ -40,7 +40,6 @@ OPENBENCH_CONFIG = {
     'tests' : {
         'max_games'  : '20000',        # Default for Fixed Games
         'confidence' : '[0.05, 0.05]', # SPRT Type I/II Confidence
-        'throughput' : { 'stc' : 1000, 'ltc' : 1000, 'smpstc' : 1000, 'smpltc' : 1000 },
     },
 
     # Book Configuration. When addding a book, follow the provided template.
@@ -107,13 +106,12 @@ OPENBENCH_CONFIG = {
                 'cpuflags'  : [],
             },
 
-            'testmodes' : {
-                'stc'     : { 'threads' : 1, 'hash' :  64, 'timecontrol' : '30+1' },
-                'ltc'     : { 'threads' : 1, 'hash' :  64, 'timecontrol' : '10/40+0' },
-                'smpstc'  : { 'threads' : 8, 'hash' :  64, 'timecontrol' : '30+1' },
-                'smpltc'  : { 'threads' : 8, 'hash' :  64, 'timecontrol' : '10/40+0' },
-             },
-        },
-
+            'testmodes' : [
+                { 'id' : 'STC',                'th' : 1, 'hash' :  64, 'tc' : '30+1' },
+                { 'id' : 'LTC',                'th' : 1, 'hash' :  64, 'tc' : '10/40+0' },
+                { 'id' : 'SMP STC',            'th' : 8, 'hash' :  64, 'tc' : '30+1' },
+                { 'id' : 'SMP LTC',            'th' : 8, 'hash' :  64, 'tc' : '10/40+0' },
+            ],
+        }
     },
 }
